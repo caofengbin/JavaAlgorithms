@@ -29,7 +29,7 @@ public class TwoSumTwo {
 
     public static void main(String[] args) {
         int[] nums = {2, 7, 11, 15};
-        int target = 19;
+        int target = 18;
         printArr((new TwoSumTwo()).twoSum(nums, target));
     }
 }
