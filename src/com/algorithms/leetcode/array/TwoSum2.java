@@ -6,7 +6,7 @@ package com.algorithms.leetcode.array;
  * 给定一个以升序排序的有序数组和一个target数字，从数组中找出两个元素使其和相加等于target，
  * 并输出两个元素的下标index
  */
-public class TwoSumTwo {
+public class TwoSum2 {
     public int[] twoSum(int[] numbers, int target) {
         int begin = 0;
         int end = numbers.length - 1;
@@ -32,6 +32,6 @@ public class TwoSumTwo {
     public static void main(String[] args) {
         int[] nums = {2, 7, 11, 15};
         int target = 18;
-        printArr((new TwoSumTwo()).twoSum(nums, target));
+        printArr((new TwoSum2()).twoSum(nums, target));
     }
 }
