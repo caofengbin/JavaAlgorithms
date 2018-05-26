@@ -2,10 +2,17 @@ package com.algorithms.leetcode.array;
 
 /**
  * leetcode 125，links:https://leetcode.com/problems/valid-palindrome/description/
+ * 题目描述：
  * 给定一个字符串，判断其是否为回文字符串，注意，需要剔除其中非字母和数字的元素进行判断
  */
 public class ValidPalindrome {
 
+    /**
+     * 解法1：使用双指标进行收尾遍历，遇到非字母或数字的字符，修改指针下标，直至遍历完成
+     *
+     * @param s 原始字符串
+     * @return 是否为符合要求的回文串
+     */
     public boolean isPalindrome(String s) {
         s = s.toLowerCase();
         char[] chars = s.toCharArray();
@@ -29,7 +36,7 @@ public class ValidPalindrome {
         return true;
     }
 
-    public boolean isTargetChar(char targetChar) {
+    private boolean isTargetChar(char targetChar) {
         return (targetChar >= 48 && targetChar <= 57) ||
                 (targetChar >= 65 && targetChar <= 90) ||
                 (targetChar >= 97 && targetChar <= 122);

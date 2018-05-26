@@ -1,16 +1,18 @@
 package com.algorithms.leetcode.array;
 
 /**
- * leetcode 167
- *https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
+ * leetcode 167，https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
+ * 题目描述：
+ * 给定一个以升序排序的有序数组和一个target数字，从数组中找出两个元素使其和相加等于target，
+ * 并输出两个元素的下标index
  */
 public class TwoSumTwo {
     public int[] twoSum(int[] numbers, int target) {
-        int begin = 0 ;
+        int begin = 0;
         int end = numbers.length - 1;
         while (begin < end) {
-            if(numbers[begin] + numbers[end] == target) {
-                return new int[] {begin + 1, end + 1};
+            if (numbers[begin] + numbers[end] == target) {
+                return new int[]{begin + 1, end + 1};
             } else if (numbers[begin] + numbers[end] < target) {
                 begin++;
             } else {
@@ -21,7 +23,7 @@ public class TwoSumTwo {
         throw new IllegalStateException("The input has no solution");
     }
 
-    private static void printArr(int[] nums){
+    private static void printArr(int[] nums) {
         System.out.print(nums[0] + " " + nums[1]);
         System.out.println();
     }
