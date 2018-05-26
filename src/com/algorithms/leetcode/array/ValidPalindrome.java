@@ -3,7 +3,8 @@ package com.algorithms.leetcode.array;
 /**
  * leetcode 125，links:https://leetcode.com/problems/valid-palindrome/description/
  * 题目描述：
- * 给定一个字符串，判断其是否为回文字符串，注意，需要剔除其中非字母和数字的元素进行判断
+ * 给定一个字符串，判断其是否为回文字符串，
+ * 注意，只看其中的字母和数字，忽略字母的大小写
  */
 public class ValidPalindrome {
 
