@@ -14,7 +14,7 @@ public class RemoveDuplicatesFromSortedArray {
         }
 
         int iteratorPointer = 1;                         // 迭代器指针
-        // 当前正在遍历的非重复元素的指针，[0,currentRepeatPointer)以前都是非重复的元素
+        // 当前正在遍历的非重复元素的指针，[0,currentRepeatPointer]前闭后闭区间，都是非重复的元素
         int currentRepeatPointer = 0;
         int currentRepeatData = nums[0];                         // 当前正在遍历的非重复元素值
 
