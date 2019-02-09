@@ -85,7 +85,7 @@ public class SortColors {
     }
 
     public static void main(String[] args) {
-        int[] nums = {2, 0, 2, 1, 1, 0, 6};
+        int[] nums = {2, 0, 2, 1, 1, 0, 0};
         printArr(new SortColors().sortColors2(nums));
     }
 }
